@@ -32,7 +32,7 @@ const Holdings = () => {
   let totalPl=0
   
   holdingData.forEach((stock)=>{
-    const stockInv= stock.avg*stock.price;
+    const stockInv= stock.avg*stock.qty;
     const stockCrv=stock.price*stock.qty
     const Stockpl=(stockCrv-(stock.avg*stock.qty));
     totalCrv +=stockCrv;
